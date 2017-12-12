@@ -13,11 +13,12 @@
 use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
 
-
+/*
 Route::match(array('GET', 'POST'), '/incoming', function()
 {
 
   Log::info("llego el mensaje");
+  
   $xml = '<Response> <Message>Hello - rosa. Neat, eh?</Message>></Response>';
   $response = Response::make($xml, 200);
   $response->header('Content-Type', 'text/xml');
@@ -29,9 +30,10 @@ Route::match(array('GET', 'POST'), '/incoming', function()
   //$response->header('Content-Type', 'text/xml');
   //return $response;
 
-});  
+}); 
+*/ 
 
-Route::get('/get-message', 'PhoneController@getMessages');
+//Route::get('/get-message', 'PhoneController@getMessages');
 
 Route::get('/hola', function () {
 	// Get form inputs

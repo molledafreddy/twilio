@@ -10,7 +10,7 @@ class PhoneController extends Controller
 {
     public function getMessages(Request $request)
     {
-    	dd($request);
+    	dd("hola");
 
     }
 }
